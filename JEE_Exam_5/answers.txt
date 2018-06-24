@@ -1,0 +1,18 @@
+Zad 1. Co to są klasy abstrakcyjne? Do czego one służą? Jak stworzymy obiekt klasy abstrakcyjnej?
+
+Klasy abstrakcyjne są to klasy posiadające przynajmniej jedną metodę abstrakcyjną. Poprzedzone są słowem kluczowym abstract. Służą do ustalania jakie metody będą
+musiały implementować klasy dziedziczące po klasie abstrakcyjnej. Nie można utworzyć obiektu klasy abstrakcyjnej. Można za to tworzyć obiekty klas dziedziczących
+po klasie abstrakcyjnej.
+
+Zad 2. Co to są interfejsy? Do czego one służą? Czy implementacja interfejsu zmusza nas do czegoś?
+
+Interfejsy są to specjalne zbiory stałych i deklaracji metod, które wymuszają na klasach implementujących dany interfejs przesłonięcie wszystkich metod interfejsu.
+Umożliwia to działanie na różnych klasach w ten sam sposób, co pozwala na wstrzykiwanie klas bez konieczności zmiany kodu. Klasa może implementować 
+wiele interfejsów na raz.
+
+Zad 3. Wymień i opisz znane Ci wzorce projektowe.
+
+Jest to prosty, kreacyjny wzorzec projektowy, (uznawany też czasami za antywzorzec), którego celem jest ograniczenie możliwości tworzenia obiektów danej klasydo tylko jednej instancji i zapewnienie globalnego dostępu do niej. Wykorzystuje się tutaj prywatny konstruktor.
+Fasada Jest to strukturalny wzorzec projektowy, którego celem jest ograniczenie skomplikowanej struktury do jednego prostrzego i uporządkowanego interfejsu programistycznego. W przypadku fasady użytkownik nie korzysta z jej wewnętrznych zasobów, może tylko korzystać z udostępnionych przez nią metod.
+Obserwator to behawioralny wzorzec projektowy, jest strukturą Obserwowany - Obserwujący. Może być wielu obserwujących. Zmiana stanu obiektu obserwowanego powoduje automatyczne powiadomienie o tym wszystkich obiektów obserwujących.
+Fabryka Jest to kreacyjny wzorzec projektowy, który uniezależnia użytkownika od implementacji obiektów, udostępniając mu tylko ich interfejs. Sam natomiast tworzy niezbędne obiekty w razie potrzeby.
